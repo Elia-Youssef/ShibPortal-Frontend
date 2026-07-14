@@ -1,0 +1,44 @@
+.container {
+    position: relative;
+    cursor: pointer;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    transition-duration: .2s;
+}
+
+.background {
+    width: 235px;
+    height: 54px;
+    border-radius: 10px;
+    transform: skew(-18deg, 0);
+    border: 2px solid #FF6B0D;
+    background-color: #FF6B0D;
+    transition-duration: .2s;
+}
+
+.backgroundNotFilled {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.titleNotFilled {
+    color: #FF6B0D;
+}
+
+.container:hover .title {
+    color: #FF6B0D;
+}
+.container:hover .background {
+    background-color: white;
+}
+.container:hover .backgroundNotFilled {
+    background-color: white;
+}

@@ -1,0 +1,28 @@
+.container {
+    position: relative;
+    width: 155px;
+    height: 155px;
+}
+
+.loadingIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loadingRing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}

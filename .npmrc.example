@@ -1,0 +1,3 @@
+@shibaone:registry=https://npm.pkg.github.com
+package-lock=false
+//npm.pkg.github.com/:_authToken=<auth-token>
