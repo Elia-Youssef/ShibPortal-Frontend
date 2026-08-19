@@ -4,6 +4,10 @@ function getScope() {
 }
 
 self.addEventListener('message', function (event) {
+  if (event.origin !== new URL(getScope()).origin) {
+    return;
+  }
+
   if (event.data && event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();
   }
