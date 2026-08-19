@@ -1,0 +1,16 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.9/schema.json",
+  "files": {
+    "includes": [
+      "**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,json,jsonc,css}",
+      "!node_modules",
+      "!.next"
+    ]
+  },
+  "formatter": { "enabled": false },
+  "linter": {
+    "enabled": true,
+    "rules": { "preset": "none" }
+  },
+  "assist": { "enabled": false }
+}

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "check:repository": "python scripts/check_repository.py && npx --yes --registry=https://registry.npmjs.org @biomejs/biome@2.5.9 ci .",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",

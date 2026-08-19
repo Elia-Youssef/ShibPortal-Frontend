@@ -78,7 +78,7 @@ sequenceDiagram
 - npm access to the private `@shibaone` GitHub Packages scope
 - Team-provided environment values for identity, API, and streaming services
 
-Copy `.npmrc.example` to your user-level or project npm configuration, replace the placeholder with an authorized package token, and keep the resulting file out of version control.
+Copy `.npmrc.example` to your user-level or project npm configuration, set `GITHUB_TOKEN` to an authorized package token, and keep the resulting file out of version control.
 
 ```bash
 npm install
@@ -92,6 +92,16 @@ npm run build
 ```
 
 Production packaging expects the encrypted environment artifacts used by `entrypoint.sh`; they are managed outside this portfolio snapshot.
+
+## Repository checks
+
+Run the dependency-free repository and source-syntax checks with:
+
+```bash
+npm run check:repository
+```
+
+Pull requests also run secret scanning, dependency review, and CodeQL in GitHub Actions. Installing private `@shibaone` packages still requires an authorized `GITHUB_TOKEN`.
 
 ## Ecosystem context
 
